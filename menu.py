@@ -1,5 +1,14 @@
 from calculadora import *
 
+print("""
+ESCOLHA UMA DAS OPÇÕES:
+1 - Somar
+2 - Subtrair
+3 - Multiplicar
+4 - Dividir
+0 - Sair
+""")
+
 opcao = input(("Escolha a opção do menu:"))
 
 def menu (opcao):
@@ -11,3 +20,6 @@ def menu (opcao):
        return print(f'{6} * {5} = {multiplicar(6,5)}')
     if opcao == "4":
        return print(f'{10} / {2} = {dividir(10,2)}')
+
+    return
+menu(opcao)
